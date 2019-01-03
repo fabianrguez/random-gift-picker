@@ -1,0 +1,134 @@
+body {
+    background-image: url("../images/kira-auf-der-heide-475623-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: white !important;
+    font-family: Mountains of Christmas;
+    padding: 2rem;
+}
+
+.fill-height { 
+    min-height: 100%;
+    height: 100%;
+}
+
+.gifts-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gifts-numbers {
+    width: 20%;
+    margin-right: .5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.gift-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-back {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#gift{
+    position:absolute;
+    top:0;right:0;left:0;bottom:0;
+    margin:auto;
+    width:100px;
+    height:400px;
+  }
+  #ribbon{
+    position:relative;
+    width:60px;
+    height:60px;
+    transform:rotate(45deg);
+    margin:auto;
+    margin-bottom:-38px;
+    border-radius:0 8px 0 8px;
+  }
+  #ribbon:before{
+    content:"";
+    height:24px;
+    width:100%;
+    background-color: var(--info);
+    display:block;
+    position:absolute;
+    top:18px;
+    box-shadow:0 0 1px rgba(0,0,0,0.4);
+    border-radius:inherit;
+  }
+  #ribbon:after{
+    content:"";
+    height:100%;
+    width:24px;
+    background-color: var(--info);
+    display:block;
+    margin:auto;
+    box-shadow:0 0 1px rgba(0,0,0,0.4);
+    border-radius:inherit;
+  }
+  #giftbox{
+    position:relative;
+    margin:auto;
+    width:100px;
+    height:100px;
+    background-color:#ceaa35;
+    border-radius:6px;
+    box-shadow:0 0 1px rgba(0,0,0,0.4);
+    overflow:hidden;
+  }
+  #giftbox:before{
+    content:"";
+    height:24%;
+    width:100%;
+    background-color: var(--info);
+    display:block;
+    position:absolute;
+    top:38%;
+    box-shadow:inherit;
+  }
+  #giftbox:after{
+    content:"";
+    height:100%;
+    width:24%;
+    background-color: var(--info);
+    display:block;
+    margin:auto;
+    box-shadow:inherit;
+  }
+
+  #circle{
+    width:214px;
+    height:214px;
+    background-color:#FFC847;
+    border-radius:214px;
+    position:absolute;
+    top:0;right:0;bottom:0;left:0;
+    margin:auto;
+    box-shadow:0 1px 2px rgba(0,0,0,0.3);
+  }
+  #circle:after{
+    content:"";
+    display:block;
+    border:7px dashed white;
+    width:200px;
+    height:200px;
+    border-radius:200px;
+    animation: spin 30s linear infinite;
+  }
+  #circle:hover{
+    background-image:radial-gradient(#FFED85, #FFC847 70%);
+  }

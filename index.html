@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Elige un regalo aleatorio!</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class="container fill-height">
+            <div class="btn-back" style='display: none;'>
+                <button class="btn btn-default">Volver</button>
+            </div>
+            <div class="gifts-numbers-selection">
+                <div class="row fill-height align-items-center justify-content-center">
+                    <div class="col-sm-12 col-xs-12 col-lg-6">
+                        <h2 class="h2 text-center">¿Cuántos regalos tienes?</h3>
+                        <div class="gifts-selector">
+                            <input type="number" class="form-control gifts-numbers" min="1" value="1"/>
+                            <button class="btn btn-info btn-gift">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gifts-picker" style='display: none;'>
+                <div class="row justify-content-center">
+                    <div id="gift" style="display: none;">
+                        <div id="ribbon"></div>
+                        <div id="giftbox"></div>
+                        <h3 class="h3 text-center font-weight-bold gift-selected"></h3>
+                    </div>
+                </div>
+                <div class="row fill-height align-items-center justify-content-center">
+                    <div class="col-sm-12 col-xs-12 col-lg-6">
+                        <h2 class="h2 text-center">Seleccionar regalo aleatorio</h2>
+                        <div class="gift-picker">
+                            <button class="btn btn-info btn-picker">¡Dame un regalo!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gifts-opened" style='display: none;'>
+                <div class="row fill-height align-items-center justify-content-center">
+                    <h1 class="h1 text-center">¡Has abierto todos los regalos!</h1>
+                </div>
+            </div>
+        </div>
+
+        <script src="src/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+</html>
